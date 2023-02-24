@@ -1,0 +1,314 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+/* SETUP */
+/* --------------- */
+
+.header, .main, .footer {
+    padding: 1em;
+}
+
+.header-ul {
+    border: 3px solid black;
+    border-radius: 9px;
+}
+
+.col-2, .col-3, .col-4 {
+    display: grid;
+    border: 3px solid rgb(63, 55, 55);
+    text-align: center;
+    padding: 10px;
+}
+
+.info-box {
+    border: 3px solid red;
+    position: relative;
+}
+
+
+.cat_pic {
+    border: 3px solid red;
+    background-color: #1d52c5;
+}
+
+hr {
+    color: white;
+}
+
+
+/* HEADER */
+/* --------------- */
+
+.header {
+    background-color: green;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.header_button {
+    border-radius: 9px;
+    background-color: black;
+    color: snow;
+    margin: 20px;
+    padding: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.header_nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    
+}
+
+.header_nav a {
+    display: block;
+    color: rgb(247, 223, 181);
+    text-decoration: none;
+}
+
+
+/* BODY */
+/* --------------- */
+
+body {
+    line-height: 1.4;
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(#304264, #1e3056);
+    color: rgb(255,255,255);
+    margin: 0;
+}
+
+
+.main {
+    background-image: linear-gradient(rgb(245, 214, 156),rgb(243, 199, 122));
+}
+
+/* FOOT nav */
+/* --------------- */
+
+footer {
+    background-color: rebeccapurple;
+}
+
+.footernav {
+    list-style-type: none;
+}
+
+.footernav a {
+    color: rgb(247, 223, 181);
+    text-decoration: none;
+}
+
+.footernav a:visited {
+    color: rgb(255, 186, 96);
+}
+
+.footernav a:hover, .footernav a:active {
+    text-decoration: underline;
+}
+
+.main, .main a {
+    color: rgb(44, 44, 44);
+}
+
+/* SCREEN SIZES */
+/* --------------- */
+
+/* 600px */
+@media screen and (min-width:37.5em){ 
+    .col-3 {
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+    .header_nav {
+        margin-top: 3.5em;
+    }   
+
+}
+
+/* 760px */
+@media screen and (min-width:48em){  
+
+    .col-2, .col-3 {
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+
+    .col-4 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    body {
+        line-height: 1.5;
+    }
+    .header h1 {
+        font-size: 4em;
+        margin-bottom: 0;
+    }
+
+    .header_nav {
+        display: block;
+        text-align: right;
+    }
+
+    .header_nav {
+        display: flex;
+        flex-flow: row;
+        justify-content: end;
+    }
+
+    .header_nav a {
+        padding-left: 3em;
+    }
+
+}
+
+/* 960px */
+@media screen and (min-width: 60em){  
+
+    .col-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+/* 1280px + */
+@media screen and (min-width: 80em){ 
+    
+    .container {
+        max-width: 80em;
+        margin: 0 auto;
+    }
+
+}
+
+/* PIC */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+figure {
+    border: 3px solid red;
+}
+
+
+
+/* UL LINK */
+
+.header-ul, .header-ul p {
+    margin: 0;
+    padding: 0; 
+    max-width: 250px;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+
+} 
+    
+
+.header-ul li {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    line-height: 40px;
+    
+    text-align: center;
+    font-size: xx-large;
+}
+
+.header-ul li a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    display: block;
+
+}
+
+.header-ul li a:hover {
+    color: red;
+
+}
+
+.header-ul li ul li {
+    display: none;
+}
+
+li:hover ul li {
+    display: block;
+}
+
+
+/* INFO TABLE */
+
+.info_box {
+    
+    border-left: 1px solid blue;
+    padding: 30px;
+    max-width: 100%;
+    height: auto;
+    /* border-collapse: collapse; */
+
+}
+
+.team_photo {
+    border: 3px solid black;
+    max-width: 80%;
+    height: auto;
+}
+
+.info_table {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    min-width: 300px;
+}
+
+
+tbody {
+    text-align: center;
+    font-size: 1.2em;
+    width: 50%;
+
+}
+
+tbody tr {
+    border-bottom: 3px solid black;
+    text-align: start;
+    
+}
+
+/* GIFS */
+
+.arc-link {
+    display: block;
+    height: auto;
+    margin: auto;
+    width: 30px;
+
+}
+
+.col-1 h1 {
+    margin: 0;
+ 
+}
+/* .arc-link:hover .archvile_gif {
+    
+
+} */
+
