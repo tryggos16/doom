@@ -138,6 +138,7 @@ footer {
     color: rgb(247, 223, 181);
     text-decoration: none;
     font-size: 1.2em;
+    font-family: oswald;
     
 }
 
@@ -211,6 +212,12 @@ footer {
     .col-3 {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .container {
+        max-width: 60em;
+        margin: 0 auto;
+    }
+
 
 }
 
@@ -342,4 +349,10 @@ tbody tr {
     
 
 } */
+
+/* TEST */
+
+.test_sect p {
+    font-style:normal
+}
 
